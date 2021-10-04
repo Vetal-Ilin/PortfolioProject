@@ -1,0 +1,34 @@
+.product-counter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0 5px 0;
+    border: 1px dashed @palette-fivefold;
+    border-radius: @br-elements;
+    width: 100px;
+    
+    & > button {
+        border: none;
+        width: 10px;
+        height: 10px;
+        color: @palette-fivefold;
+        position: relative;
+        border-radius: 10px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & > p {
+        text-align: center;
+        color: @palette-fivefold;
+    }
+
+    @media screen and (hover: hover) {
+        &__button__minus:hover,
+        &__button__plus:hover {
+            cursor: pointer;
+        }
+    }
+}

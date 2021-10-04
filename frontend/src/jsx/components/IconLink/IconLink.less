@@ -1,0 +1,52 @@
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > span {
+        width: 27px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin: 0 auto;
+
+        & > img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+    & > p {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 3px;
+        color: @palette-fivefold; 
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            background-color: @x-color-purple;
+            transition: left @animation-speed;
+        }
+    }
+
+    @media screen and (hover: hover) {
+        &:hover {
+            & > span > img {
+                width: 100%;
+                height: 100%;
+            }
+
+            & > p {
+                &::before {
+                    left: 0;
+                }
+            }
+        }
+    }
+}

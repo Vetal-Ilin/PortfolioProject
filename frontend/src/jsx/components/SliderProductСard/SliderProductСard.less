@@ -1,0 +1,54 @@
+.slider-product-card {
+    
+    & .slick-slide > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    & .slick-list {
+        position: relative;
+        padding: 30px 0; 
+    }
+    
+    & .slick-arrow {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        
+        &::before {
+            color: @palette-secondary;
+            font-size: 60px;
+        }
+
+        &.slick-prev {
+            left: 0;
+            z-index: 1;
+        } 
+
+        &.slick-next {
+            right: 0;
+            z-index: 1;
+        } 
+    }
+
+    & .slick-dots {
+
+        bottom: -35px; 
+
+        & > li > button::before {
+            color: @palette-fivefold;
+        }
+    }
+    
+    .slick-arrow.slick-disabled{
+        &::before {
+            color: transparent;
+        }
+    }
+}
+
+
+
+

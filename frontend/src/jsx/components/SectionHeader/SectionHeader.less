@@ -1,0 +1,52 @@
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+    background:@palette-quaternary;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 1.0) 19%, rgba(223, 211, 195, 1.0) 100%);
+
+    &__link-avatar {
+        margin: 0 auto;
+    }
+    
+
+    & > .container {
+        color: @palette-fivefold;
+        z-index: 1;
+        text-align: center;
+
+        & > h1 {
+            margin-top: 30px;
+        }
+
+        & > h3 {
+            margin-top: 30px;
+        }
+    }
+
+    &__link-button-to-scroll {
+        margin-top: 30px; 
+    }
+
+    @media screen and (min-width: 768px) {
+        & > .container {
+
+            & > h3 {
+                margin-top: 30px;
+            }
+        } 
+
+        &__link-button-to-scroll {
+            margin-top: 30px; 
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        border-radius: 0;
+    }
+}

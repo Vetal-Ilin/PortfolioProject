@@ -1,0 +1,34 @@
+.link-button-to-scroll {
+    padding: 15px 10px 15px 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: @palette-secondary;
+    width: 200px;
+    transition: color @animation-speed;
+    border-radius: @br-elements;
+    .bottom-hover-effect();
+}
+
+.link-to-scroll {
+    color: @palette-fivefold;
+
+    @media screen and (min-width: 992px) and (hover: hover) {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 3px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            background-color: @x-color-purple;
+            transition: left @animation-speed;
+        }
+    }
+}

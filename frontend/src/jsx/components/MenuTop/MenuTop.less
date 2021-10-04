@@ -1,0 +1,114 @@
+.menu-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 60px;
+    z-index: 1000000000;
+
+    & > .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            z-index: -1;
+            background-color: @palette-primary;
+            border-top: 1px solid @palette-secondary-translucent;
+            transition: top @animation-speed;    
+        }
+
+        & > .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__shopping-cart {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    
+        & > button {
+            width: 31px;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+
+            & > p {
+                margin-right: 5px;
+            }
+
+            & > img {
+                .icon-size();
+            }
+        }
+
+        & > button.menu-top__shopping-cart__active {
+            width: auto;
+            padding: 10px;
+
+            & > p,
+            & > i {
+                color: @palette-tertiary;
+            }
+            
+        }
+
+        @media screen and(hover: hover) {
+            & > button:hover {
+                color: @palette-fivefold;
+                cursor: pointer;
+                & > i,
+                & > p {
+                    color: @palette-fivefold;
+                }
+            }
+        }
+    }
+
+    &_scroll-down {
+        
+        & > .wrapper {
+            &::before {
+                top: 0;
+                box-shadow: @bs-elements;
+            }
+        }
+    }
+
+    @media screen and (hover: hover) {
+
+        & > .wrapper {
+            & > .container {
+                position: relative;
+                justify-content: flex-start;
+            }
+        } 
+
+        &__shopping-cart {
+            z-index: 1;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        } 
+    }
+}

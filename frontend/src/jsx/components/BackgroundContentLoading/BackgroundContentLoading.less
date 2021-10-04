@@ -1,0 +1,24 @@
+.background-content-loading {
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__wrapper {
+        width: 100%;
+        height: 100%; 
+        animation-name: backgroundContentLoading;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        background: linear-gradient(45deg, #e0e0e0, #ffffff, #e0e0e0, #e0e0e0);
+        background-position: 0 0;
+    }
+}
+
+
+@keyframes backgroundContentLoading {
+    50% {
+        background-position: 700px 0;
+    }
+}

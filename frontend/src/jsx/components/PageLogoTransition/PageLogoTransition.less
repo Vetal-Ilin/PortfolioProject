@@ -1,0 +1,25 @@
+.page-logo-transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 30px;
+    
+    & > img {
+        width: 98%; 
+        height: 96%;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 180px;
+    }
+
+    @media screen and (hover:hover) {
+        &:hover {
+            cursor: pointer;
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+}

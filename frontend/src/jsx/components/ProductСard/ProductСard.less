@@ -1,0 +1,106 @@
+.product-card {
+    width: 250px;
+    height: auto;
+    border-radius:  @br-elements;
+    box-shadow: @bs-elements;
+    position: relative;
+    transition: all @animation-speed;
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+
+    &__wrapper {
+        background-color: @palette-primary;
+        height: 100%;
+        padding: 10px;
+        border-radius: @br-elemnts-bottom;
+
+        & > p {
+            color: @palette-fivefold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:nth-child(2)  {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__description-product-card {
+   
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            border-top: 1px solid @palette-fivefold;
+            border-bottom: 1px solid @palette-fivefold;
+            padding: 10px 0;
+            margin: 20px auto auto auto;
+            width: 200px;
+    
+            &__price {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+        
+                & > p {
+                    color: @palette-fivefold;
+                }
+            }
+        
+            &__size {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                color: @palette-fivefold;
+                text-align: center;
+        
+                & > p {
+                    margin-right: 5px;
+                }
+            }
+        }
+    
+        &__button {
+            margin: 20px auto 0 auto;
+            padding: 15px 10px 15px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: @palette-hexadecimal;
+            width: 100%;
+            transition: color @animation-speed;
+            border-radius: @br-elements;
+            background-color: transparent;
+            border: none;
+            .bottom-hover-effect();
+
+            &::before {
+                background-color: transparent;
+            }
+
+            & > img {
+                .icon-size();
+            }
+        }
+    }
+
+    @media screen and (hover: hover) {
+        &:hover {
+            cursor: pointer;
+            transform: translateX(-10px) translateY(-10px);
+            box-shadow: @bs-elements-hover;
+        }
+    }
+}

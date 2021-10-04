@@ -1,0 +1,18 @@
+.background-color-dark-transparent {
+    position: fixed;
+    top: 0;
+    right: -150%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: @palette-secondary-translucent;
+    transition: right @animation-speed;
+    
+    &_open {
+        right: 0;
+    }
+
+    @media screen and(hover: hover) {
+        display: none;
+    }
+}

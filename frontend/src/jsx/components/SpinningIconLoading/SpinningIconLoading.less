@@ -1,0 +1,34 @@
+.spinning-icon-loading {
+    width: 110px;
+    height: 98px;
+    z-index: -1;
+
+    &__wrapper-icon {
+        
+        width: 80%;
+        height: 80%;
+        animation-duration: 3s;
+        animation-name: spinningIconLoadingAnimationRectangles;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        & > img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    & > p {
+        color: @palette-tertiary;
+        padding-top: 50px;
+    }
+}
+
+@keyframes spinningIconLoadingAnimationRectangles {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
