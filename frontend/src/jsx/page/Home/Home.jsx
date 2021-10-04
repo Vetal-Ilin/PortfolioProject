@@ -34,27 +34,8 @@ export default function Home({
         }
     ];
 
-    // =======================================================
-
-    const user = {
-        name: 'Jines',
-        surname: 'Klinton'
-    }
-
-    Object.defineProperty(user, 'surname', {
-        enumerable: false
-    })
-
-    const gp = () => {
-       
-        let a = Object.getOwnPropertyDescriptor(user)
-       console.log(toString(a))
-    } 
-    
-    //=====================================================================
-
     return (
-        <div className='home' onClick={gp}> 
+        <div className='home'> 
             <MenuTop 
                     listLinkNavBar={listLinkNavBar} 
                     listSubgroupProducts={listSubgroupProducts}
