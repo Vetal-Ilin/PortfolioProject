@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'; // удалить useEffect
+import React, {useEffect} from 'react'; 
 import PageLogoToScroll from '../../components/PageLogoToScroll/PageLogoToScroll';
 import MenuTop from '../../components/MenuTop/MenuTop';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
