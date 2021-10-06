@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'; 
+import React from 'react'; 
 import PageLogoToScroll from '../../components/PageLogoToScroll/PageLogoToScroll';
 import MenuTop from '../../components/MenuTop/MenuTop';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
@@ -87,7 +87,7 @@ export default function Home({
                         Товары загружаются с тестового сервера mockAPI. Исходный код вы можете посмотреть на моем репозитории на GitHub.'
                         src={imageAboutProject}
                     >
-                        <a href='https://github.com/Vetal-Ilin/VINAIV.git'><p>Исходный код</p></a>
+                        <a href='https://github.com/Vetal-Ilin/PortfolioProject.git'><p>Исходный код</p></a>
                         <a href='http://vetalmmg.beget.tech/'><p>Мое резюме</p></a>
                     </SectionText>
                 </div>
