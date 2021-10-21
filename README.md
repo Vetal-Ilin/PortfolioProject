@@ -10,17 +10,17 @@ npm i
 cd frontend  
 npm run start
 #### Для запуска в режиме development и режиме непрерывного процесса: 
-cd frontend
+cd frontend  
 npm run watch
 #### Для сборки выходных файлов в режиме development:
-cd frontend
+cd frontend  
 npm run dev
 #### Для сборки выходных файлов в режиме production:
-cd frontend
+cd frontend  
 npm run build
 
 ## Описание реализации
-Проект собран при помощи webpack. 
+Проект собран при помощи webpack.   
 Ссылка на ссбору webpack: "сслылка"
 
 Код написан при помощи библиотеки React.
