@@ -7,16 +7,16 @@
 npm i
 
 ## Запуск
-### Для запуска в режиме development на локальном сервере: 
+#### Для запуска в режиме development на локальном сервере: 
 cd frontend
 npm run start
-### Для запуска в режиме development и режиме непрерывного процесса: 
+#### Для запуска в режиме development и режиме непрерывного процесса: 
 cd frontend
 npm run watch
-### Для сборки выходных файлов в режиме development:
+#### Для сборки выходных файлов в режиме development:
 cd frontend
 npm run dev
-### Для сборки выходных файлов в режиме production:
+#### Для сборки выходных файлов в режиме production:
 cd frontend
 npm run build
 
