@@ -7,7 +7,7 @@ npm i
 
 ## Запуск
 #### Для запуска в режиме development на локальном сервере: 
-cd frontend
+cd frontend  
 npm run start
 #### Для запуска в режиме development и режиме непрерывного процесса: 
 cd frontend
